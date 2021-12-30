@@ -103,25 +103,25 @@ According to Mozilla's website, <q cite="https://www.mozilla.org/en-US/about/his
 
 Tables aren't part of the core Markdown spec, but Hugo supports them.
 
-| ID  | Make      | Model   | Year |
-| --- | --------- | ------- | ---- |
-| 1   | Honda     | Accord  | 2009 |
-| 2   | Toyota    | Camry   | 2012 |
-| 3   | Hyundai   | Elantra | 2010 |
+| ID  | Make    | Model   | Year |
+| --- | ------- | ------- | ---- |
+| 1   | Honda   | Accord  | 2009 |
+| 2   | Toyota  | Camry   | 2012 |
+| 3   | Hyundai | Elantra | 2010 |
 
 Colons can be used to align columns.
 
-| Tables      | Are           | Cool         |
-|:----------- |:-------------:| ------------:|
+| Tables      |      Are      |         Cool |
+| :---------- | :-----------: | -----------: |
 | align: left | align: center | align: right |
 | align: left | align: center | align: right |
 | align: left | align: center | align: right |
 
 You can also use inline Markdown.
 
-| Inline     | Markdown  | In                | Table      |
-| ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~ | `code`     |
+| Inline    | Markdown | In                | Table  |
+| --------- | -------- | ----------------- | ------ |
+| *italics* | **bold** | ~~strikethrough~~ | `code` |
 
 ## Code
 

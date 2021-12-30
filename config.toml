@@ -2,11 +2,10 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Melad Kamari Blog"
 theme = "mainroad"
-
 [Author] 
   name = "Melad Kamari"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "https://melad.dev/img/MeladKamari.jpeg"
+  avatar = "/img/MeladKamari.jpeg"
 
   [menu]
    [[menu.main]]
@@ -33,7 +32,6 @@ theme = "mainroad"
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
-
   [Params.style.vars]
   highlightColor = "#5027D5" # Override highlight color
    fontFamilyPrimary = "'Vazir', Helvetica, Arial, sans-serif"
@@ -43,7 +41,7 @@ theme = "mainroad"
   #image = "https://melad.dev/img/MeladKamari.jpeg"
   title = "Melad Kamari" # Logo title, otherwise will use site title
   subtitle = "TIPS, TRICKS AND THOUGHTS ABOUT .NET DEVELOPMENT" # Logo subtitle
-
+ 
 [Params.thumbnail]
   visibility = ["list", "post"] # Control thumbnail visibility
 
