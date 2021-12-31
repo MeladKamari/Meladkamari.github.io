@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Melad Kamari Blog"
+title = "Melad Kamari's Blog"
 theme = "mainroad"
 [Author] 
   name = "Melad Kamari"
@@ -13,9 +13,18 @@ theme = "mainroad"
     name = "About"
     url = "/about"
 
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+[markup.goldmark.renderer]
+  unsafe = true
+
+[taxonomies]
+  series = "series"
+  tag = "tags"
+
 [Params]
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  copyright = "John Doe" # Footer copyright holder, otherwise will use site title
+  copyright = "Melad Kamari" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -23,15 +32,16 @@ theme = "mainroad"
   authorbox = true # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
-  dateformat = "2006-01-02" # Change the format of dates
+  post_meta = [ "date", "series"] # Order of post meta information
+  mainSections = ["posts","post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
+
+
   [Params.style.vars]
   highlightColor = "#5027D5" # Override highlight color
    fontFamilyPrimary = "'Vazir', Helvetica, Arial, sans-serif"
@@ -54,5 +64,9 @@ theme = "mainroad"
 
   
 [Params.widgets.social]
-  github = "meladkamari"
-  twitter = "meladkamari"
+  # Enable parts of social widget
+  twitter = "MeladKamari"
+  instagram = "MeladKamari"
+  linkedin = "MeladKamari"
+  telegram = "MeladKamari"
+  github = "MeladKamari"
