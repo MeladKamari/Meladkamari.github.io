@@ -19,9 +19,9 @@ googleAnalytics = "G-P72CEPHHDP"
 [markup.goldmark.renderer]
   unsafe = true
 
-[taxonomies]
-  series = "series"
-  tag = "tags"
+#[taxonomies]
+#  series = "series"
+#  tag = "tags"
 
 [Params]
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
