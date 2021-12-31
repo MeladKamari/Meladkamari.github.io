@@ -7,19 +7,11 @@
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
 	<meta name="theme-color" content="{{.Site.Params.style.vars.highlightColor}}" />
     <meta name="msapplication-TileColor" content="{{.Site.Params.style.vars.highlightColor}}">
-    <meta name="theme-color" content="{{.Site.Params.style.vars.highlightColor}}">
     <meta name="msapplication-navbutton-color" content="{{.Site.Params.style.vars.highlightColor}}">
     <meta name="apple-mobile-web-app-status-bar-style" content="{{.Site.Params.style.vars.highlightColor}}">
-	<meta name="google-site-verification" content="fAf_kcvBSl4rFF3ewa_WKRml6QFIRyAFFNB6i0U9QyM" />
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:title" content="Tags"/>
 	<meta name="twitter:description" content="{{.Site.Title}}"/>
-	
-	<meta property="og:title" content="melad.dev" />
-	<meta property="og:description" content="{{.Site.Title}}" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="/" />
-	<meta property="og:site_name" content="melad.dev" />
 
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
