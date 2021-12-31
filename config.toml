@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Melad Kamari's Blog"
 theme = "mainroad"
+googleAnalytics = "G-P72CEPHHDP"
 [Author] 
   name = "Melad Kamari"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
