@@ -1328,3 +1328,6 @@ textarea {
 		font-size: .6875rem;
 	}
 }
+.widget__link{
+	padding: 0.2em;
+}
