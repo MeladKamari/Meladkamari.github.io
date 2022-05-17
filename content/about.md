@@ -4,7 +4,7 @@ date: 2021-12-30T20:58:22+03:30
 layout: page
 ---
 
-I'm Thomas Levesque, a French software developer from Paris. I've been programming
+I'm Melad, a French software developer from Paris. I've been programming
 in C# almost since the beginning, and I still love it. I've done a lot of desktop
 app development with WinForms and WPF, but nowadays my focus is mostly on ASP.NET
 Core.
