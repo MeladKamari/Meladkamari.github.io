@@ -1,4 +1,4 @@
-baseURL = "melad.dev"
+baseURL = "https://melad.dev"
 languageCode = "en-us"
 title = "Melad Kamari's Blog"
 theme = "mainroad"
