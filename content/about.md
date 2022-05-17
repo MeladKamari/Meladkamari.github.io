@@ -1,16 +1,13 @@
 ---
 title: "About"
-date: 2021-12-30T20:58:22+03:30
+date: 2022-05-17T20:58:22+03:30
 layout: page
 ---
 
-I'm Melad, a French software developer from Paris. I've been programming
-in C# almost since the beginning, and I still love it. I've done a lot of desktop
-app development with WinForms and WPF, but nowadays my focus is mostly on ASP.NET
-Core.
+I'm a Software Architect who loves to build great team with a that makes a difference in the businesses that need them.
 
-I'm a core maintainer of [FakeItEasy](https://fakeiteasy.github.io/), the easy mocking library for .NET. I also maintain a few personal open-source projects, which you can see on [my Github account](https://github.com/thomaslevesque).
+I’ve been working in the Microsoft domain since starting with .NET over 8 years ago and I’m interested in Management , Agile Methodology , Microservices, DDD, TDD, BDD, Event Sourcing , Event Storming , Event Modeling , SOA .
 
-I'm a Microsoft MVP since 2012.
+I work hard to apply my core knowledge of Agile, .NET combined with a keen interest in current and emerging technologies to make an effective solution.
 
-To be notified of my new blog posts, subscribe to the [RSS feed](/index.xml), or [follow me on Twitter](https://twitter.com/thomaslevesque).
+To be notified of my new blog posts, subscribe to the [RSS feed](/index.xml), or [follow me on Twitter](https://twitter.com/meladkamari).

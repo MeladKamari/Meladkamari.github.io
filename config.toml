@@ -4,8 +4,8 @@ title = "Melad Kamari's Blog"
 theme = "mainroad"
 googleAnalytics = "G-P72CEPHHDP"
 [Author] 
-  name = "Melad Kamari"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  name = "Melad"
+  bio = "In striving to do better than anyone"
   avatar = "/img/MeladKamari.jpeg"
 
   [menu]
@@ -24,7 +24,7 @@ googleAnalytics = "G-P72CEPHHDP"
 #  tag = "tags"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  description = "Melad Kamari's Personal blog about everything" # Site description. Used in meta description
   copyright = "Melad Kamari" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
@@ -51,7 +51,7 @@ googleAnalytics = "G-P72CEPHHDP"
   [Params.logo]
   #image = "https://melad.dev/img/MeladKamari.jpeg"
   title = "Melad Kamari" # Logo title, otherwise will use site title
-  subtitle = "TIPS, TRICKS AND THOUGHTS ABOUT .NET DEVELOPMENT" # Logo subtitle
+  subtitle = "TIPS, TRICKS AND THOUGHTS ABOUT Software" # Logo subtitle
  
 [Params.thumbnail]
   visibility = ["list", "post"] # Control thumbnail visibility
