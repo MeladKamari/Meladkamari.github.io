@@ -12,3 +12,4 @@ hugo.linux
 # Lock file
 .hugo_build.lock
 .idea/
+.vscode/
