@@ -8,6 +8,7 @@ googleAnalytics = "G-P72CEPHHDP"
   bio = "In striving to do better than anyone"
   avatar = "/img/MeladKamari.jpeg"
 
+
   [menu]
    [[menu.main]]
     identifier = "about"
