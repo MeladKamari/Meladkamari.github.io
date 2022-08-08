@@ -14,10 +14,16 @@
         {{- end }}
 
 		{{- with .Site.Params.widgets.social.linkedin }}
-        <a class="widget-social__link-custom widget__link" title="Twitter" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}" target="_blank">
+        <a class="widget-social__link-custom widget__link" title="linkedin" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}" target="_blank">
             {{ partial "svg/linkedin.svg" (dict "class" "widget-social__link-icon-custom") }}
         </a>
         {{- end }}
+		{{- with .Site.Params.widgets.social.instagram }}
+		<a class="widget-social__link-custom widget__link" title="instagram" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}" target="_blank">
+			{{ partial "svg/instagram.svg" (dict "class" "widget-social__link-icon-custom") }}
+		</a>
+		{{- end }}
+
         <a class="widget-social__link-custom widget__link" title="RSS feed" rel="noopener noreferrer" href="/index.xml">
             {{ partial "svg/rss.svg" (dict "class" "widget-social__link-icon-custom") }}
         </a>
