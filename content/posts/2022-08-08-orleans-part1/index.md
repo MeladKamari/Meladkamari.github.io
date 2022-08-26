@@ -1,24 +1,25 @@
 ---
-
-title: Orleans
+title: Microsoft Orleans
 date: 2022-08-08
-description: Describes common Mainroad theme configuration parameters that can be adjusted via config file or via Front Matter section.
+description: Microsoft Orleans.
 link-title: Orleans
-draft: true
-author-box: true
+draft: false
+authorbox: false
+comments: true
 thumbnail:
     src: "img/Orleans.png"
 visibility:
 - list
 menu:
     main:
-        name: Orleans
+        name: Microsoft Orleans
         weight: 10
-
 tags:
 - distributed
-- orleans
+- Microsoft Orleans
 - Actor Model
 series:
- - Orleans
+ - Microsoft Orleans
 ---
+
+

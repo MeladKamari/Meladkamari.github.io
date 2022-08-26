@@ -1,18 +1,18 @@
 baseURL = "/"
-languageCode = "en-us"
-title = "Melad Kamari's Blog"
+title = "Melad Kamari's Blog | وبلاگ میلاد کمری"
 theme = "mainroad"
 googleAnalytics = "G-P72CEPHHDP"
+languageCode = "fa-ir"
+DefaultContentLanguage = "fa"
+disqusShortname = 'melad-dev'
 [Author] 
   name = "Melad"
   bio = "In striving to do better than anyone"
   avatar = "/img/MeladKamari.jpeg"
-
-
   [menu]
    [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "درباره من"
     url = "/about"
 
 [permalinks]
@@ -23,6 +23,7 @@ googleAnalytics = "G-P72CEPHHDP"
 [taxonomies]
   series = "series"
   tag = "tags"
+
 
 [Params]
   description = "Melad Kamari's Personal blog about everything" # Site description. Used in meta description
@@ -43,7 +44,6 @@ googleAnalytics = "G-P72CEPHHDP"
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
 
-
   [Params.style.vars]
   highlightColor = "#5027D5" # Override highlight color
    fontFamilyPrimary = "'Vazir', Helvetica, Arial, sans-serif"
@@ -51,7 +51,7 @@ googleAnalytics = "G-P72CEPHHDP"
 
   [Params.logo]
   #image = "https://melad.dev/img/MeladKamari.jpeg"
-  title = "Melad Kamari" # Logo title, otherwise will use site title
+  title = "میلاد کمری" # Logo title, otherwise will use site title
   subtitle = "TIPS, TRICKS AND THOUGHTS ABOUT Software" # Logo subtitle
  
 [Params.thumbnail]
@@ -64,6 +64,8 @@ googleAnalytics = "G-P72CEPHHDP"
   # Enable widgets in given order
   widgets = ["search", "social", "recent", "taglist"]
 
+[outputs]
+section = [ "HTML", "RSS"]
   
 [Params.widgets.social]
   # Enable parts of social widget
@@ -72,3 +74,6 @@ googleAnalytics = "G-P72CEPHHDP"
   linkedin = "melad-kamari-70a65b120"
   telegram = "MeladKamari"
   github = "MeladKamari"
+
+
+
