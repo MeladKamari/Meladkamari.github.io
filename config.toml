@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Melad Kamari's Blog"
+title = "Melad Kamari's Blog | وبلاگ میلاد کمری"
 theme = "mainroad"
 googleAnalytics = "G-P72CEPHHDP"
 [Author] 
@@ -64,6 +64,8 @@ googleAnalytics = "G-P72CEPHHDP"
   # Enable widgets in given order
   widgets = ["search", "social", "recent", "taglist"]
 
+  [outputs]
+  section = [ "HTML", "RSS"]
   
 [Params.widgets.social]
   # Enable parts of social widget
