@@ -1,18 +1,18 @@
 baseURL = "/"
-title = "Melad Kamari's Blog | وبلاگ میلاد کمری"
+languageCode = "en-us"
+title = "Melad Kamari's Blog"
 theme = "mainroad"
 googleAnalytics = "G-P72CEPHHDP"
-languageCode = "fa-ir"
-DefaultContentLanguage = "fa"
-disqusShortname = 'melad-dev'
 [Author] 
   name = "Melad"
   bio = "In striving to do better than anyone"
   avatar = "/img/MeladKamari.jpeg"
+
+
   [menu]
    [[menu.main]]
     identifier = "about"
-    name = "درباره من"
+    name = "About"
     url = "/about"
 
 [permalinks]
@@ -23,7 +23,6 @@ disqusShortname = 'melad-dev'
 [taxonomies]
   series = "series"
   tag = "tags"
-
 
 [Params]
   description = "Melad Kamari's Personal blog about everything" # Site description. Used in meta description
@@ -44,6 +43,7 @@ disqusShortname = 'melad-dev'
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
 
+
   [Params.style.vars]
   highlightColor = "#5027D5" # Override highlight color
    fontFamilyPrimary = "'Vazir', Helvetica, Arial, sans-serif"
@@ -51,7 +51,7 @@ disqusShortname = 'melad-dev'
 
   [Params.logo]
   #image = "https://melad.dev/img/MeladKamari.jpeg"
-  title = "میلاد کمری" # Logo title, otherwise will use site title
+  title = "Melad Kamari" # Logo title, otherwise will use site title
   subtitle = "TIPS, TRICKS AND THOUGHTS ABOUT Software" # Logo subtitle
  
 [Params.thumbnail]
@@ -64,8 +64,6 @@ disqusShortname = 'melad-dev'
   # Enable widgets in given order
   widgets = ["search", "social", "recent", "taglist"]
 
-[outputs]
-section = [ "HTML", "RSS"]
   
 [Params.widgets.social]
   # Enable parts of social widget
@@ -74,6 +72,3 @@ section = [ "HTML", "RSS"]
   linkedin = "melad-kamari-70a65b120"
   telegram = "MeladKamari"
   github = "MeladKamari"
-
-
-
