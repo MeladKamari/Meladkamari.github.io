@@ -50,13 +50,13 @@ html {
 
 body {
 	margin: 0;
-	font-family: {{ $fontFamilyPrimary }};
-	font-size: 14px;
-	font-size: .875rem;
-	line-height: 1.6;
-	word-wrap: break-word;
-	background: #F5F7F9;
-	-webkit-font-smoothing: antialiased;
+font-family: {{ $fontFamilyPrimary }};
+font-size: 14px;
+font-size: .875rem;
+line-height: 1.6;
+word-wrap: break-word;
+background: #F5F7F9;
+-webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -141,7 +141,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 /* Animation */
@@ -200,7 +200,7 @@ a {
 }
 
 a:hover {
-	color: {{ $highlightColor }};
+color: {{ $highlightColor }};
 }
 
 hr {
@@ -261,8 +261,8 @@ pre,
 code,
 kbd,
 samp {
-	font-family: {{ $fontFamilySecondary }};
-	font-size: inherit;
+font-family: {{ $fontFamilySecondary }};
+font-size: inherit;
 }
 
 pre,
@@ -306,7 +306,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid {{ $highlightColor }};
+border-left: 5px solid {{ $highlightColor }};
 }
 
 blockquote p:last-child {
@@ -438,15 +438,15 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: {{ $highlightColor }};
-	border-top: 1px solid #ebebeb;
+color: {{ $highlightColor }};
+border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: {{ $highlightColor }};
-	border: 0;
+background: {{ $highlightColor }};
+border: 0;
 }
 
 /* Main menu */
@@ -482,7 +482,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
+box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -495,7 +495,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: {{ $highlightColor }};
+color: {{ $highlightColor }};
 }
 
 .menu__list {
@@ -504,7 +504,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 .menu__item:first-child {
@@ -512,7 +512,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 .menu__link {
@@ -553,29 +553,29 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid {{ $highlightColor }};
-	}
+	border-bottom: 5px solid {{ $highlightColor }};
+}
 
-	.menu__btn {
-		display: none;
-	}
+.menu__btn {
+	display: none;
+}
 
-	.menu__list,
-	.js .menu__list {
-		position: relative;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-wrap: wrap;
-		flex-wrap: wrap;
-		visibility: visible;
-		border: 0;
-		-webkit-transform: none;
-		transform: none;
-	}
+.menu__list,
+.js .menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	visibility: visible;
+	border: 0;
+	-webkit-transform: none;
+	transform: none;
+}
 
-	.menu__item {
-		border-left: 1px solid rgba(255, 255, 255, .1);
-	}
+.menu__item {
+	border-left: 1px solid rgba(255, 255, 255, .1);
+}
 }
 
 /* Posts/Pages */
@@ -607,7 +607,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: {{ $highlightColor }};
+color: {{ $highlightColor }};
 }
 
 .meta__item {
@@ -651,7 +651,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__thumbnail {
-	max-width: 1030px;
+	max-width: 200px;
+	max-height: 200px;
 	margin: 0 0 20px;
 	margin-bottom: 0 0 1.25rem;
 }
@@ -664,14 +665,14 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a,
 .authorbox__description a {
 	font-weight: 700;
-	color: {{ $highlightColor }};
+color: {{ $highlightColor }};
 }
 
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover {
-	color: {{ $highlightColor }};
-	text-decoration: underline;
+color: {{ $highlightColor }};
+text-decoration: underline;
 }
 
 .content .alignnone {
@@ -744,7 +745,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item {
-	float: left;
+	float: right;
 	margin: 0 6px 6px 0;
 	margin: 0 .375rem .375rem 0;
 	text-transform: uppercase;
@@ -752,7 +753,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 .tags__link,
@@ -762,13 +763,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__badge {
-	float: left;
+	float: right;
 	width: 32px;
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: {{ $highlightColor }};
-	fill: #fff;
+background: {{ $highlightColor }};
+fill: #fff;
 }
 
 /* Table of Contents */
@@ -829,8 +830,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: {{ $highlightColor }};
-	border-bottom: 1px solid #ebebeb;
+color: {{ $highlightColor }};
+border-bottom: 1px solid #ebebeb;
 }
 
 .toc__menu a:hover {
@@ -847,14 +848,15 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .authorbox__avatar {
-	float: left;
+	float: right;
 	padding: 3px;
-	margin: 0 25px 0 0;
 	border: 1px solid #ebebeb;
 }
-
-.authorbox__header {
-	margin-bottom: 10px;
+*{
+	direction: rtl;
+}
+.authorbox__header,.authorbox__description {
+	margin: 0 7rem 0 0;
 }
 
 .authorbox__name {
@@ -917,7 +919,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 /* Pager (prev/next links) navigation */
@@ -1039,7 +1041,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 textarea {
@@ -1068,7 +1070,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid {{ $highlightColor }};
+border-bottom: 3px solid {{ $highlightColor }};
 }
 
 .widget__item {
@@ -1157,7 +1159,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: {{ $highlightColor }};
+background: {{ $highlightColor }};
 }
 
 .widget-languages__link-btn {
