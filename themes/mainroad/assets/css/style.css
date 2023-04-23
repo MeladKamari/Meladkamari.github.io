@@ -895,7 +895,9 @@ border-bottom: 1px solid #ebebeb;
 
 .list__thumbnail img {
 	width: 100%;
-	max-width: 235px;
+	max-width: 200px;
+	margin-top: -20px !important;
+	margin-right: -20px !important;
 }
 
 .list__footer-readmore {
