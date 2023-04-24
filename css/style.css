@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Vazir';
+	src: url("/fonts/Vazirmatn.woff2") format('woff2');
+}
+
 article,
 aside,
 dialog,
