@@ -3,6 +3,9 @@
 *::after {
 	box-sizing: border-box;
 }
+a,p,span{
+	color: black !important;
+}
 
 @font-face {
 	font-family: 'Vazir';
