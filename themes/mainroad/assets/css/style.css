@@ -10,7 +10,9 @@
 *::after {
 	box-sizing: border-box;
 }
-
+a,p,span{
+	color: black !important;
+}
 article,
 aside,
 dialog,
