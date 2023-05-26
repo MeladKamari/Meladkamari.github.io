@@ -13,6 +13,12 @@
 a,p,span{
 	color: black !important;
 }
+
+@font-face {
+	font-family: 'Vazir';
+	src: url("/fonts/Vazirmatn.woff2") format('woff2');
+}
+
 article,
 aside,
 dialog,
