@@ -3,7 +3,7 @@
 *::after {
 	box-sizing: border-box;
 }
-a,p,span{
+.time-ago,.author,.post-message {
 	color: black !important;
 }
 
