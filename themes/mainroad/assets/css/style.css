@@ -1346,3 +1346,6 @@ background: {{ $highlightColor }};
 .widget__link{
 	padding: 0.2em;
 }
+pre{
+	direction: ltr !important;
+}
