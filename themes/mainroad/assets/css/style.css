@@ -863,6 +863,7 @@ border-bottom: 1px solid #ebebeb;
 body {
 	direction: rtl !important;
 }
+
 .authorbox__header,.authorbox__description {
 	margin: 0 7rem 0 0;
 }
