@@ -853,8 +853,8 @@ border-bottom: 1px solid #ebebeb;
 	padding: 3px;
 	border: 1px solid #ebebeb;
 }
-*{
-	direction: rtl;
+container {
+direction: rtl;
 }
 .authorbox__header,.authorbox__description {
 	margin: 0 7rem 0 0;
