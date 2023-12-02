@@ -1,13 +1,13 @@
 ---
 title: Sonarqube
-date: 2023-04-23
+date: 2023-12-02
 description: Sonarqube .Net Example .
 link-title: Sonarqube
-draft: true
+draft: false
 authorbox: false
 comments: true
 thumbnail:
-    src: "img/sonarqube.jpg"
+    src: "img/sonarqube-dotnet/sonarqube.jpg"
 visibility:
 - list
 menu:
@@ -51,7 +51,7 @@ Go
 Kotlin
 Scala** 
 <!--more-->
-برای اجرا کردن SonarQube فایل [docker-compose.yml](https://raw.githubusercontent.com/MeladKamari/Sonarqube-Sample-Project/master/docker-compose.yml)  را اجرا کنید.
+برای اجرا کردن SonarQube فایل [docker-compose.yml](https://raw.githubusercontent.com/MeladKamari/Sonarqube-Sample-Project/master/docker-compose.yml)  را اجرا کنید
 <!--more-->
 
 ```yaml
@@ -90,9 +90,54 @@ volumes:
 
 
 <!--more-->
-یا با این  Command میتوانید SonarQube را اجرا کنید
+یا با این  Command میتوانید SonarQube را اجرا کنید .
 <!--more-->
 ```bash
  curl -O https://raw.githubusercontent.com/MeladKamari/Sonarqube-Sample-Project/master/docker-compose.yml docker-compose up
 ```
 <!--more-->
+SonarQube در پورت 9000 در دسترس است  و با  admin admin میتوان لاگین کرد.
+<!--more-->
+![sonarqube-login-page.jpg](/img/sonarqube-dotnet/sonarqube-login-page.jpg)
+<!--more-->
+SonarQube قابلیت اتصال به Source Control های **AzureDevOps, Github, BitbucketCloud, Gitlab, BitBucketServer**
+را دارد.
+<!--more-->
+برای دسترسی به Command های SonarQube کد زیر را در ترمینال اجرا کنید.
+```bash
+dotnet tool install --global dotnet-sonarscanner
+```
+در SonarQube روی Create a local project کلیک میکنیم تا پروژه جدیدی ساخته شود.
+
+![sonarqube-create-a-local-project.jpg](/img/sonarqube-dotnet/sonarqube-create-a-local-project.jpg)
+
+در این صفحه اطلاعات پروژه را وارد میکنیم و **Project Key** منحصر به فردی را به پروژه اختصاص میدهیم. 
+
+![sonarqube-create-a-local-project-input.jpg](/img/sonarqube-dotnet/sonarqube-create-a-local-project-input.jpg)
+<!--more-->
+مرحله بعدی baseline مورد نیاز برای پروژه را انتخاب میکنیم .
+![set-up-project-for-clean-as-you-code.jpg](/img/sonarqube-dotnet/set-up-project-for-clean-as-you-code.jpg)
+پروژه در SonarQube ساخته شد مرحله بعدی ساخت Access Token برای دسترسی به SonarQube است .
+<!--more-->
+درمنوی My Account 
+<!--more-->
+![account.jpg](/img/sonarqube-dotnet/account.jpg)
+<!--more-->
+تب  Token  , Security  جدیدی ایجاد میکنیم.
+<!--more-->
+![generate-token.jpg](/img/sonarqube-dotnet/generate-token.jpg)
+
+ حال با استفاده از Command , **Token - URL - Project Key** های زیر را اجرا میکنیم تا Metric ها به سرور SonarQube ارسال شود.
+
+```bash
+dotnet sonarscanner begin /k:"CNL" /d:sonar.host.url=http://192.168.126.131:9000 /d:sonar.token=sqp_f70e2686968ebd3ba0af83678e8f5433cbb1a654
+dotnet build 
+dotnet sonarscanner end /d:sonar.token=sqp_f70e2686968ebd3ba0af83678e8f5433cbb1a654
+```
+<!--more-->
+بعد از ارسال Metric ها به سرور SonarQube در Dashboard  میتوان وضعیت  Code base را مشاهده کرد.  
+<!--more-->
+![quality-gate-status.jpg.jpg](/img/sonarqube-dotnet/quality-gate-status.jpg)
+
+
+[لینک گیت هاب پروژه](https://github.com/MeladKamari/Sonarqube-Sample-Project)
